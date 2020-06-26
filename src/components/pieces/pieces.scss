@@ -1,62 +1,62 @@
 
 .pawn{
-    width:1.5rem;
-    height:2.5rem;
+  width:1.5rem;
+  height:2.5rem;
 }
 
 .knight{
-  width:1.75rem;
-  height:2.75rem;
+width:1.75rem;
+height:2.75rem;
 }
 
 .rooke{
-  width:1.75rem;
-  height:2.75rem;
+width:1.75rem;
+height:2.75rem;
 }
 
 .king{
-  width:2.25rem;
-  height:3.5rem;
+width:2.25rem;
+height:3.5rem;
 }
 
 .queen{
-  width:2.25rem;
-  height:3.5rem;
+width:2.25rem;
+height:3.5rem;
 }
 
 .bishop{
-  width:2rem;
-  height:3rem;
+width:2rem;
+height:3rem;
 }
 @media (min-width: 0px) and (max-width: 453px) {
-    
-    .pawn{
-      width:1rem;
-      height:1.5rem;
-    }
-
-    .knight{
-    width:1.2rem;
-    height:1.6rem;
-    }
-
-    .rooke{
-    width:1.2rem;
-    height:1.6rem;
-    }
-
-    .king{
-    width:1.5rem;
-    height:1.85rem;
-    }
-
-    .queen{
-    width:1.5rem;
-    height:1.85rem;
-    }
-
-    .bishop{
-    width:1.3rem;
-    height:1.75rem;
-    }
+  
+  .pawn{
+    width:1rem;
+    height:1.5rem;
   }
+
+  .knight{
+  width:1.2rem;
+  height:1.6rem;
+  }
+
+  .rooke{
+  width:1.2rem;
+  height:1.6rem;
+  }
+
+  .king{
+  width:1.5rem;
+  height:1.85rem;
+  }
+
+  .queen{
+  width:1.5rem;
+  height:1.85rem;
+  }
+
+  .bishop{
+  width:1.3rem;
+  height:1.75rem;
+  }
+}
