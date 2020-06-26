@@ -5,7 +5,7 @@ import WhiteCaptured from './WhitePiecesCaptured'
 import BlackCaptured from './BlackPiecesCaptured'
 import Square from './Square'
 import { connect } from 'react-redux'
-import './board.scss'
+import './board.scss'//for media queries
 
 
 

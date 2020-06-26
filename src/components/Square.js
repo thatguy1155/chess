@@ -9,7 +9,7 @@ import Pawn from './pieces/Pawn'
 import Bishop from './pieces/Bishop'
 import King from './pieces/King'
 import Queen from './pieces/Queen'
-import './board.scss'
+import './board.scss'//for media queries
 
 
 

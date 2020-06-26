@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { endGame } from '../actions/turnActions'
 import shortid from 'shortid'
 import { connect } from 'react-redux'
-import './board.scss'
+import './board.scss'//for media queries
 
 const BlackPiecesCaptured = (props) => {
     const {capturedBlackPieces,selectedPiece,endGame,winner} = props

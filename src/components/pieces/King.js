@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { kingAction } from '../../actions/boardActions'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
-import './pieces.scss'
+import './pieces.scss'//for media queries
 
 const King = (props) => {
    const {team,location,kingAction,turn} = props
