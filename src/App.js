@@ -15,7 +15,7 @@ function App() {
 }
 
 const teal = {
-  backgroundColor:'lightBlue',
+  backgroundColor:'lightgrey',
   height:'100vh'
 }
 

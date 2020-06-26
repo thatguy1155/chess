@@ -5,6 +5,7 @@ import WhiteCaptured from './WhitePiecesCaptured'
 import BlackCaptured from './BlackPiecesCaptured'
 import Square from './Square'
 import { connect } from 'react-redux'
+import './board.scss'
 
 
 
@@ -29,7 +30,7 @@ const Chessboard = (props) => {
   return (
     <React.Fragment>
       <CssBaseline />
-      <div style={flex}>
+      <div style={flex} className="flex-direction">
         <BlackCaptured />
         <Container maxWidth="sm">
           <div style={boardGrid}>

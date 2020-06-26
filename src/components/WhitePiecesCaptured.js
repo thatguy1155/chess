@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react'
 import { endGame } from '../actions/turnActions'
 import shortid from 'shortid'
 import { connect } from 'react-redux'
+import './board.scss'
 
 //main react component
 const WhitePiecesCaptured = (props) => {
@@ -69,18 +70,11 @@ const WhitePiecesCaptured = (props) => {
     const captured = {
       display:'flex',
       flexWrap:'wrap',
-      minHeight:'6rem',
-      width:'6rem',
       backgroundColor:'black',
-      margin:'auto',
-      padding:'.5rem',
       borderRadius:'10px'
     }
 
-    const chessPiece = {
-      width:'1.5rem',
-      height:'2.5rem'
-    }
+    
 
     const finalMessageStyle = {
       cursor:'pointer',
@@ -89,10 +83,10 @@ const WhitePiecesCaptured = (props) => {
 
   
     return (
-      <div style={captured}>
+      <div className="captured-sizing" style={captured}>
           <div style={{display:winnerChosen(winner).gameOn}}>
             {capturedWhitePieces.map(item => (
-                <img src={imageMap[item.type]} key={item.id} alt="captured piece" style={chessPiece}></img>
+                <img src={imageMap[item.type]} key={item.id} alt="captured piece" className="captured-piece"></img>
             ))}
             <button style={checkmateButton} onMouseOver={() => {setHovering('on')}} onMouseOut={() => {setHovering('off')}} onClick={() => {endGame('white')}}>checkmate?</button>
           </div>

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { rookeAction } from '../../actions/boardActions'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
+import './pieces.scss'
 
 
 const Rooke = (props) => {
@@ -24,15 +25,13 @@ const Rooke = (props) => {
 
     //----------inline style----------
     const chessPiece = {
-        width:'1.75rem',
-        height:'2.75rem',
         backgroundColor:hoverSettings(hovering).backgroundColor,
        boxShadow:hoverSettings(hovering).boxShadow,
        padding:hoverSettings(hovering).padding
     }
    
     return (
-        <img src={teamParser()} alt="knight" style={chessPiece} onMouseOver={() => {setHovering('on')}} onMouseOut={() => {setHovering('off')}} onClick={() => {rookeMoves()}}></img>
+        <img src={teamParser()} alt="knight" className="rooke" style={chessPiece} onMouseOver={() => {setHovering('on')}} onMouseOut={() => {setHovering('off')}} onClick={() => {rookeMoves()}}></img>
     );
   }
 

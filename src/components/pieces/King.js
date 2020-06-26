@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import { kingAction } from '../../actions/boardActions'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
+import './pieces.scss'
+
 const King = (props) => {
    const {team,location,kingAction,turn} = props
    const [hovering, setHovering] = useState('off');
@@ -22,15 +24,13 @@ const King = (props) => {
 
     //----------inline style----------
     const chessPiece = {
-        width:'2.25rem',
-        height:'3.5rem',
         backgroundColor:hoverSettings(hovering).backgroundColor,
        boxShadow:hoverSettings(hovering).boxShadow,
        padding:hoverSettings(hovering).padding
     }
    
     return (
-        <img src={teamParser()} alt="king" style={chessPiece} onMouseOver={() => {setHovering('on')}} onMouseOut={() => {setHovering('off')}} onClick={() => {kingMoves()}}></img>
+        <img src={teamParser()} alt="king" style={chessPiece} className="king" onMouseOver={() => {setHovering('on')}} onMouseOut={() => {setHovering('off')}} onClick={() => {kingMoves()}}></img>
     );
   }
 

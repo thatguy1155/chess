@@ -1,0 +1,49 @@
+.square{
+    height:4rem;
+    width:4rem;
+}
+
+.captured-sizing{
+    min-height:6rem;
+    width:6rem;
+    padding:.5rem;
+    margin:auto;
+
+    .captured-piece{
+        width:1.5rem;
+        height:2.5rem;
+    }
+}
+
+.flex-direction{
+    flex-direction: row;
+}
+
+
+@media (min-width: 0px) and (max-width: 453px) {
+    
+    .square{
+      width:2rem;
+      height:2rem;
+    }
+
+    .captured-sizing{
+        min-height:1.5rem;
+        width:8.5rem;
+        padding:.1rem;
+        margin:2rem;
+        
+        
+        .captured-piece{
+            width:.5rem;
+            height:.75rem;
+        }
+    }
+
+    .flex-direction{
+        flex-direction: column;
+        justify-content:space-around
+    }
+
+   
+  }

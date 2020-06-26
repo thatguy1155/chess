@@ -9,6 +9,7 @@ import Pawn from './pieces/Pawn'
 import Bishop from './pieces/Bishop'
 import King from './pieces/King'
 import Queen from './pieces/Queen'
+import './board.scss'
 
 
 
@@ -52,8 +53,6 @@ const Square = (props) => {
 
     //------------inline style---------------
     const squareStyle = {
-        height:'4rem',
-        width:'4rem',
         opacity:isPlayable(),
         backgroundColor:blackOrWhite()
     }
@@ -85,7 +84,7 @@ const Square = (props) => {
     const chosenPiece = chessPiece()
 
     return (
-      <div style={squareStyle} onMouseOver={() => {setHovering('on')}} onMouseOut={() => {setHovering('off')}}onClick={movePiece}>{chosenPiece}</div>
+      <div style={squareStyle} className="square" onMouseOver={() => {setHovering('on')}} onMouseOut={() => {setHovering('off')}}onClick={movePiece}>{chosenPiece}</div>
     );
   }
 

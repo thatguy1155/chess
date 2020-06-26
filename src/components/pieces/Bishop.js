@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { bishopAction } from '../../actions/boardActions'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
+import './pieces.scss'
 
 const Bishop = (props) => {
    const {team,location,bishopAction,turn} = props
@@ -23,15 +24,13 @@ const Bishop = (props) => {
 
     //----------inline style----------
     const chessPiece = {
-        width:'2rem',
-        height:'3rem',
         backgroundColor:hoverSettings(hovering).backgroundColor,
        boxShadow:hoverSettings(hovering).boxShadow,
        padding:hoverSettings(hovering).padding
     }
    
     return (
-        <img src={teamParser()} alt="bishop" style={chessPiece} onMouseOver={() => {setHovering('on')}} onMouseOut={() => {setHovering('off')}} onClick={() => {bishopMoves()}}></img>
+        <img src={teamParser()} alt="bishop" style={chessPiece} className="bishop" onMouseOver={() => {setHovering('on')}} onMouseOut={() => {setHovering('off')}} onClick={() => {bishopMoves()}}></img>
     );
   }
 //make sure that the returned turn is always a string
